@@ -163,7 +163,8 @@
       <span class="eyebrow">Pronto para o caso?</span>
       <h2>Baixe e leve o projeto com você</h2>
       <div class="cta">
-        <a class="btn primary" id="downloadBtn2" href="#" target="_blank" rel="noopener">⬇ Baixar e assistir</a>
+        <a class="btn primary" id="downloadBtn2" href="#" target="_blank" rel="noopener">⬇ Baixar e assistir</a> [operacao-chocolate-piloto_1.zip](https://github.com/user-attachments/files/33308298/operacao-chocolate-piloto_1.zip)
+<!doctype html>
       </div>
       <p class="lead" style="margin-top:18px;font-size:13px">O download inclui o player completo, a trilha de créditos e todas as imagens. Depois de baixar, extraia o .zip e abra o arquivo <code>assistir.html</code> no Chrome ou Edge para assistir — pode usar Tela cheia para exibir na TV.</p>
     </div>

@@ -1,92 +1,4 @@
 
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>O Caso da Mancha de Chocolate — Operação Chocolate</title>
-<meta name="description" content="Episódio piloto de uma série escolar de comédia e mistério: O Caso da Mancha de Chocolate. Baixe o projeto para assistir.">[operacao-chocolate-piloto_1.zip](https://github.com/user-attachments/files/33308298/operacao-chocolate-piloto_1.zip)
-<!doctype html>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-<style>
-  :root{
-    --bg:#07070b; --bg2:#0d0d14; --card:#13131c; --card-border:#24243482;
-    --cream:#f6f1e6; --muted:#9a97ac;
-    --gold:#ffd36f; --pink:#ff7b87; --blue:#71c8ee; --purple:#8377d9; --green:#79cda5;
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{
-    margin:0; background:var(--bg); color:var(--cream);
-    font-family:"Trebuchet MS",ui-rounded,system-ui,sans-serif;
-    overflow-x:hidden;
-  }
-  a{color:inherit}
-  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
-
-  .blob{position:fixed;border-radius:50%;filter:blur(60px);opacity:.18;z-index:0;pointer-events:none}
-  .blob.b1{width:380px;height:380px;background:var(--gold);top:-120px;left:-100px;animation:drift 22s ease-in-out infinite}
-  .blob.b2{width:320px;height:320px;background:var(--pink);bottom:10%;right:-120px;animation:drift 26s ease-in-out infinite reverse}
-  .blob.b3{width:260px;height:260px;background:var(--blue);top:45%;left:48%;animation:drift 19s ease-in-out infinite}
-  @keyframes drift{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,-40px) scale(1.08)}}
-
-  header.hero{position:relative;z-index:1;min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 20px}
-  .badge{display:inline-block;border:1px solid #585567;border-radius:999px;padding:8px 16px;font-size:12px;letter-spacing:.14em;color:var(--muted);margin-bottom:26px;text-transform:uppercase}
-  h1.title{margin:0;font-size:clamp(34px,8vw,78px);line-height:1.04;letter-spacing:.02em;color:#fff}
-  h1.title .line{display:block}
-  h1.title .letter{display:inline-block;opacity:0;will-change:transform,opacity;
-    animation:letterIn .6s cubic-bezier(.2,.85,.25,1.15) forwards;
-    animation-delay:calc(var(--i,0) * 45ms)}
-  @keyframes letterIn{0%{opacity:0;transform:translateY(22px) rotate(6deg) scale(.85)}70%{opacity:1;transform:translateY(-3px) rotate(-1deg) scale(1.05)}100%{opacity:1;transform:translateY(0) rotate(0) scale(1)}}
-  .accent{background:linear-gradient(90deg,var(--gold),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}
-  .subtitle{margin:22px 0 0;font-size:clamp(14px,2.2vw,19px);color:var(--muted);min-height:1.6em}
-  .subtitle .cursor{display:inline-block;width:2px;background:var(--gold);margin-left:2px;animation:blink 1s step-end infinite}
-  @keyframes blink{50%{opacity:0}}
-
-  .cta{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-top:38px}
-  .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:14px;font-weight:800;font-size:15px;text-decoration:none;border:1px solid transparent;transition:transform .18s ease,box-shadow .18s ease}
-  .btn:hover{transform:translateY(-3px)}
-  .btn.primary{background:linear-gradient(90deg,var(--gold),#ffb57e);color:#1b1407;box-shadow:0 10px 30px #ffd36f33}
-  .btn.primary:hover{box-shadow:0 14px 36px #ffd36f55}
-  .btn.ghost{background:#ffffff0a;border-color:#595567;color:var(--cream)}
-  .btn.ghost:hover{background:#ffffff14}
-  .scroll-hint{margin-top:70px;color:var(--muted);font-size:12px;letter-spacing:.2em;text-transform:uppercase;opacity:.7}
-  .scroll-hint span{display:block;margin-top:8px;animation:bounce 1.8s ease-in-out infinite}
-  @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
-
-  section{position:relative;z-index:1;padding:90px 0}
-  .section-head{text-align:center;max-width:640px;margin:0 auto 46px}
-  .eyebrow{color:var(--gold);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:12px}
-  h2{font-size:clamp(26px,4vw,38px);margin:10px 0 0;color:#fff}
-  p.lead{color:var(--muted);font-size:16px;line-height:1.7}
-
-  .about-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
-  .stat{background:var(--card);border:1px solid var(--card-border);border-radius:18px;padding:24px;text-align:center}
-  .stat b{display:block;font-size:26px;color:var(--gold);margin-bottom:6px}
-  .stat span{color:var(--muted);font-size:13px}
-
-  .cast-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;margin-top:10px}
-  .card{background:var(--card);border:1px solid var(--card-border);border-radius:18px;padding:20px;transition:transform .25s ease,border-color .25s ease}
-  .card:hover{transform:translateY(-6px);border-color:#59566f}
-  .card .dot{width:12px;height:12px;border-radius:50%;margin-bottom:12px}
-  .card h3{margin:0 0 8px;font-size:17px;color:#fff}
-  .card p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.55}
-
-  .how{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:10px}
-  .how .card p{font-size:14px}
-
-  .team{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
-  .pill{background:#ffffff0c;border:1px solid #595567;border-radius:999px;padding:9px 18px;font-size:13.5px;font-weight:700}
-
-  .final-cta{text-align:center;background:var(--bg2);border-top:1px solid var(--card-border);border-bottom:1px solid var(--card-border)}
-  .final-cta h2{margin-bottom:14px}
-
-  footer{text-align:center;color:var(--muted);font-size:12.5px;padding:46px 20px 60px;line-height:1.8}
-  footer a{color:var(--blue);text-decoration:underline}
-
-  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
-  .reveal.in{opacity:1;transform:translateY(0)}
-  @media(max-width:640px){.about-grid{grid-template-columns:1fr}}
-</style>
 </head>
 <body>
   <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
@@ -100,7 +12,8 @@
     </h1>
     <p class="subtitle" id="typeSubtitle"><span id="typeText"></span><span class="cursor">&nbsp;</span></p>
     <div class="cta">
-      <a class="btn primary" id="downloadBtn" href="#" target="_blank" rel="noopener">⬇ Baixar e assistir</a>
+      <a class="btn primary" id="downloadBtn" href="#" target="_blank" rel="noopener">⬇ Baixar e assistir [operacao-chocolate-piloto_1.zip](https://github.com/user-attachments/files/33308298/operacao-chocolate-piloto_1.zip)
+<!doctype html></a>
     </div>
     <div class="scroll-hint">Role para saber mais<span>↓</span></div>
   </header>
@@ -163,8 +76,7 @@
       <span class="eyebrow">Pronto para o caso?</span>
       <h2>Baixe e leve o projeto com você</h2>
       <div class="cta">
-        <a class="btn primary" id="downloadBtn2" href="#" target="_blank" rel="noopener">⬇ Baixar e assistir</a> [operacao-chocolate-piloto_1.zip](https://github.com/user-attachments/files/33308298/operacao-chocolate-piloto_1.zip)
-<!doctype html>
+        <a class="btn primary" id="downloadBtn2" href="#" target="_blank" rel="noopener">⬇ Baixar e assistir</a>
       </div>
       <p class="lead" style="margin-top:18px;font-size:13px">O download inclui o player completo, a trilha de créditos e todas as imagens. Depois de baixar, extraia o .zip e abra o arquivo <code>assistir.html</code> no Chrome ou Edge para assistir — pode usar Tela cheia para exibir na TV.</p>
     </div>

